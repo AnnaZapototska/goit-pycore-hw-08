@@ -10,7 +10,11 @@ class Field:
 
 
 class Name(Field):
-    pass
+    def __init__(self, value):
+        value = str(value).strip()
+        if not value:
+            raise ValueError("Name cannot be empty.")
+        super().__init__(value)
 
 
 class Phone(Field):

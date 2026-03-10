@@ -1,6 +1,6 @@
-from models import AddressBook
-from bot import *
-from storage import load_data, save_data
+from assistance_bot.src.models import AddressBook
+from assistance_bot.src.bot import *
+from assistance_bot.src.storage import load_data, save_data
 
 def parse_input(user_input: str):
     parts = user_input.strip().split()

@@ -1,4 +1,4 @@
-from models import AddressBook, Record
+from assistance_bot.src.models import AddressBook, Record
 
 # decorator for major errors
 def input_error(func):

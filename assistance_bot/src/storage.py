@@ -1,5 +1,5 @@
 import pickle
-from models import AddressBook
+from assistance_bot.src.models import AddressBook
 
 def save_data(book, filename="addressbook.pkl"):
     with open(filename, "wb") as f:
